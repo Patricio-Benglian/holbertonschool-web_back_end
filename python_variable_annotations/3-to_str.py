@@ -7,4 +7,4 @@ import typing
 
 def to_str(n: float) -> str:
     """converts float to string"""
-    return  str(n)
+    return str(n)
