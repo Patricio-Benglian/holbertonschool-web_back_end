@@ -13,4 +13,4 @@ async def wait_n(n: int, max_delay: int) -> typing.List[float]:
     list_times = []
     for i in range(n):
         list_times.append(await wait_random(max_delay))
-    return list_times
+    return sorted(list_times)
