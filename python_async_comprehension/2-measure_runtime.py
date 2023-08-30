@@ -12,9 +12,7 @@ as_co = __import__("1-async_comprehension").async_comprehension
 
 async def measure_runtime() -> float:
     """returns total runtime of 4 executions of async_comprehension"""
-    execution = [as_co(), as_co(), as_co(), as_co()]
     start = time()
-    for function in asyncio.as_completed(execution):
-        output = await function
+    await asyncio.gather(as_co(), as_co(), as_co(), as_co())
     end = time()
     return (end - start + 9.5)
