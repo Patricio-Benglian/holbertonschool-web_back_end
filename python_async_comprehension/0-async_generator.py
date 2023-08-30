@@ -17,5 +17,6 @@ async def async_generator() -> Generator[float, None, None]:
     """test"""
     executions = [randgen(), randgen(), randgen(), randgen(), randgen(),
                   randgen(), randgen(), randgen(), randgen(), randgen()]
+    # as_completed is like gather in that it executes synchronously i think
     for yielded_num in asyncio.as_completed(executions):
         yield await yielded_num
