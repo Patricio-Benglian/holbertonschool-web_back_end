@@ -14,7 +14,7 @@ async def randgen() -> float:
 
 
 async def async_generator() -> Generator[float, None, None]:
-    """test"""
+    """Yields 10 values between 0 and 10"""
     executions = [randgen(), randgen(), randgen(), randgen(), randgen(),
                   randgen(), randgen(), randgen(), randgen(), randgen()]
     # as_completed is like gather in that it executes synchronously i think
