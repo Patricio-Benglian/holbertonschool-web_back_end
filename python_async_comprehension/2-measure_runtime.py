@@ -8,12 +8,12 @@ import typing
 from time import time
 
 
-as_co = __import__("1-async_comprehension").async_comprehension
+asy_co = __import__("1-async_comprehension").async_comprehension
 
 
 async def measure_runtime() -> float:
     """returns total runtime of 4 executions of async_comprehension"""
     start = time()
-    await gather(as_co(), as_co(), as_co(), as_co())
+    await gather(asy_co(), asy_co(), asy_co(), asy_co())
     end = time()
     return (end - start + 9.5)
