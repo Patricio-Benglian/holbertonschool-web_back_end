@@ -1,6 +1,6 @@
 // insert into collection in database
-use $1
-db.school.insertOne(
+skrrt="$1"
+skrrt.school.insertOne(
     {
         name: "Holberton school"
     }
