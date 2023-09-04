@@ -1,5 +1,5 @@
 // insert into collection in database
-db.school.insertOne(
+db.school.insert(
     {
         name: "Holberton school"
     }
