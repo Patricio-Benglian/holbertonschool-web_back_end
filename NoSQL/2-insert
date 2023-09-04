@@ -1,5 +1,6 @@
 // insert into collection in database
-$1.school.insertOne(
+use $1
+db.school.insertOne(
     {
         name: "Holberton school"
     }
