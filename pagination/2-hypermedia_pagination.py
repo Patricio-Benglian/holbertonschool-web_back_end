@@ -52,7 +52,7 @@ class Server:
         output["data"] = self.get_page(page, page_size)
         # next, previous, and total amount of pages
         # (21 % 5 > 0) resolves to True (aka 1), thus rounds up if not even
-        total_pages = int(len(self.dataset()) // page_size) + (21 % 5 > 0)
+        total_pages = -(-len(self.dataset()) // page_size)
         output["next_page"] = page + 1 if page < total_pages else None
         output["prev_page"] = page - 1 if page > total_pages else None
         output["total_pages"] = total_pages
