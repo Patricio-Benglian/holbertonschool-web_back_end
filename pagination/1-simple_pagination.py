@@ -7,7 +7,6 @@ import math
 from typing import List, Tuple
 
 
-
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
     """returns start index and end index"""
     start_index = (page - 1) * page_size
