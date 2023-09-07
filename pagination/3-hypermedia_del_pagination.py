@@ -55,7 +55,7 @@ class Server:
             else:
                 next_index -= -1
             current_index -= -1
-        
+
         output["index"] = index
         output["data"] = data
         output["page_size"] = page_size
